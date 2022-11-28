@@ -1,0 +1,136 @@
+/* Core styles */
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: rgb(2, 31, 31);
+}
+
+/* Modal window */
+
+.booking_window {
+  width: 600px;
+  height: 400px;
+  background-color: rgba(216, 201, 201, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: none;
+}
+
+.box {
+  width: 90%;
+  margin: 0 auto;
+}
+
+input {
+  font-size: 18px;
+  padding: 5px;
+  margin: 25px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+#button {
+  font-size: 20px;
+  padding: 5px 15px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  margin: 260px auto;
+  display: block;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(3, 85, 44, 0.7);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card information */
+.card {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  padding: 5px;
+  background-image: linear-gradient(
+    to left,
+    rgb(46, 9, 110),
+    rgb(128, 78, 215)
+  );
+  border-radius: 10px 10px 10px 10px;
+}
+
+.food_logo {
+  width: 110px;
+  /* height: 80px; */
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.food_name {
+  /* margin: 8px 15px; */
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: wheat;
+}
+
+.food_price {
+  /* margin: 8px 15px; */
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(108, 225, 12);
+}
+
+/* Counter */
+.plus_button,
+.minus_button {
+  font-size: 45px;
+  margin: 15px;
+  color: aliceblue;
+  cursor: pointer;
+  float: right;
+}
+
+.counter {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.button {
+  transform: rotate(-90deg);
+  position: fixed;
+  margin-top: 70px;
+  margin-left: -45px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to left,
+    rgb(215, 78, 128),
+    rgb(61, 116, 21)
+  );
+}
